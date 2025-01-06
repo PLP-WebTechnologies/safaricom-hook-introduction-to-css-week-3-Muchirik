@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CSS basics</title>
+
+    <style>
+        /* Part 1: CSS selectors, properties and values */
+        h1{
+            font-size: 30px;
+        }
+        .intro-container{
+            background-color: #c69e3a;
+        }
+        .heading{
+            background-color: rgb(72, 72, 219);
+        }
+
+        #obj-container{
+            border: 2px solid black;
+        }
+        /* Part 2: Internal CSS */
+        h1{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 600;
+            font-variant: small-caps;
+            text-align: center;
+        }
+        .intro{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            letter-spacing: normal;
+            line-height: none;
+            padding: 12px;
+        }
+        h2{
+            font-size: 25px;
+            text-align: left;
+            color: black;
+            line-height: normal;
+            letter-spacing: normal;
+        }
+        #footer{
+            background-color: rgb(9, 66, 57);
+            width: auto;
+            padding: 20px;
+            margin: 10px;
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading" style="color: aqua;">
+            Welcome to the CSS Basics Masterclass
+        </h1>
+        <div class="intro-container">
+            <h1>Mastering CSS Basics</h1>
+            <p class="intro">
+                In this session we will be learning all the basics of css.
+                Make sure to attempt all the quizes and assignments.
+            </p>
+        </div>
+        <div class="objectives" id="obj-container">
+            <h2>Objectives</h2>
+            <ul id="list">
+                <li class="item">Learn the basic syntax of CSS</li>
+                <li class="item">Understand the different types of CSS selectors</li>
+                <li class="item">Learn how to use CSS properties and values</li>
+            </ul>
+        </div>
+        <div class="more" id="more-info">
+            <div>
+                <h2>
+                    Additional Materials
+                </h2>
+            </div>
+            <div id="link-container">
+                You can find 
+                <a id="link" href="https://www.w3schools.com/css/">addition information about css w3schools</a>
+                <a id="link" href="https://developer.mozilla.org/en-US/docs/Web/CSS">addition information about css MDN Docs</a>
+                <a id="link" href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website/Styling_the_content">addition information about Styling_the_content with css here</a>
+                <a id="link" href="https://web.dev/learn/css">addition information about css WebDev</a>
+                <a id="link" href="https://cssprofile.collegeboard.org/">addition information about css collegeboard</a>
+                <a id="link" href="https://en.wikipedia.org/wiki/CSS">addition information about css Wikipedia</a>
+            </div>
+            <p class="prgph">
+                Do your research and do the assignments
+            </p>
+        </div>
+        <div class="card">
+            <h2 class="card-title">Card Title</h2>
+            <p class="card-description">This is a description of the card component.</p>
+        </div>
+    </div>
+    <footer id="footer">
+        <p class="credits">
+            &copy 2025 Ken All Rights Reserved
+        </p>
+    </footer>
+</body>
+</html>
